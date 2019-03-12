@@ -1,0 +1,444 @@
+html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: #f4f4f4;
+	overflow: hidden;
+}
+
+body *{
+	font-family: Arial;
+	line-height: 1.3em;
+	font-size: 14px;
+}
+
+.wrap{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/************************************************ Блок ************************************************/
+.mapSection{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.mapSection .imgBlock{
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+	background: url(/img/map.jpg) no-repeat center center;
+	background-size: cover;
+	width: 2344px;
+	height: 1704px;
+	cursor: move;
+}
+
+/********************************************* Маркеры *********************************************/
+
+.mapSection .imgBlock.markers{
+	z-index: 2;
+	background: rgba(0,0,0,0);
+}
+
+.mapSection .imgBlock.markers .marker{
+	position: absolute;
+	cursor: default;
+	z-index: 1;
+	width: 11px;
+  height: 11px;
+  background: rgba(255,255,255,0.5);
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  opacity: 1;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+.mapSection .imgBlock.markers .marker:before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 5px;
+  height: 5px;
+  background: #003fcf;
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq{
+  position: absolute;
+  bottom: 44px;
+  left: 50%;
+  margin-left: -80px;
+  background: rgba(0,63,207,0.8);
+  width: 210px;
+  display: none;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.mapSection .imgBlock.markers .marker:hover .lhp_miv_popupq{
+	display: block;
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq::before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: calc(100% - 10px);
+  height: 10px;
+  background: rgba(0,63,207,0.8);
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq::after{
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,1);
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq .lineTo{
+  position: absolute;
+  z-index: 11;
+  bottom: -40px;
+  left: 50%;
+  width: 1px;
+  height: 40px;
+  background: #fff;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -webkit-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq p{
+  float: left;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: CuprumRegular;
+  line-height: 1.2em;
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq span{
+  display: block;
+  float: left;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  font-family: PixelCyr;
+}
+
+.mapSection .imgBlock.markers .marker .lhp_miv_popupq p span{
+	margin: 10px 0px;
+}
+/********************************************* Маркеры *********************************************/
+
+.mapSection .cloud{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1233px;
+  height: 1050px;
+  background:  url(/img/cloud.png);
+  margin-left: -615px;
+  margin-top: -525px;
+	animation: move 40s infinite linear;
+}
+
+@keyframes move{
+  0% {
+    top: 1200px;
+    left: 0px;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+    left: 3000px;
+  }
+}
+
+.rulesButtons{
+  position: absolute;
+  z-index: 10;
+  top: 112px;
+  left: 35px;
+  width: 80px;
+  height: 80px;
+}
+
+.rulesButtons .title{
+  position: absolute;
+  z-index: 11;
+  display: block;
+  bottom: -27px;
+  left: 57px;
+  background: rgba(0,0,0,0.4);
+  box-sizing: border-box;
+  padding: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-family: PixelCyr;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rulesButtons .rilesbtn{
+  position: absolute;
+  background: #fff;
+  cursor: pointer;
+}
+
+.rulesButtons .rilesbtn.top{
+  top: 0px;
+  left: 50%;
+  width: 32px;
+  height: 25px;
+  margin-left: -16px;
+}
+
+.rulesButtons .rilesbtn.top:before{
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  width: 12px;
+  height: 4px;
+  background: #818181;
+}
+
+.rulesButtons .rilesbtn.top:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 4px;
+  height: 4px;
+  background: #818181;
+  border-bottom: 4px solid #fff;
+}
+
+.rulesButtons .rilesbtn.right{
+  top: 50%;
+  right: 0px;
+  width: 25px;
+  height: 32px;
+  margin-top: -16px;
+}
+
+.rulesButtons .rilesbtn.right:before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 4px;
+  height: 12px;
+  background: #818181;
+}
+
+.rulesButtons .rilesbtn.right:after{
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  width: 4px;
+  height: 4px;
+  background: #818181;
+  border-left: 4px solid #fff;
+}
+
+.rulesButtons .rilesbtn.bottom{
+  bottom: 0px;
+  left: 50%;
+  width: 32px;
+  height: 25px;
+  margin-left: -16px;
+}
+
+.rulesButtons .rilesbtn.bottom:before{
+  content: '';
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+  width: 12px;
+  height: 4px;
+  background: #818181;
+}
+
+.rulesButtons .rilesbtn.bottom:after{
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  width: 4px;
+  height: 4px;
+  background: #818181;
+  border-top: 4px solid #fff;
+}
+
+.rulesButtons .rilesbtn.left{
+  top: 50%;
+  left: 0px;
+  width: 25px;
+  height: 32px;
+  margin-top: -16px;
+}
+
+.rulesButtons .rilesbtn.left:before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  width: 4px;
+  height: 12px;
+  background: #818181;
+}
+
+.rulesButtons .rilesbtn.left:after{
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 7px;
+  width: 4px;
+  height: 4px;
+  background: #818181;
+  border-right: 4px solid #fff;
+}
+
+.rulesButtons .rilesbtn.plus{
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  margin-left: -12px;
+  background: #003fcf;
+}
+
+.rulesButtons .rilesbtn.plus:before{
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 12px;
+  height: 2px;
+  background: #fff;
+}
+
+.rulesButtons .rilesbtn.plus:after{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 2px;
+  height: 12px;
+  background: #fff;
+}
+
+.rulesButtons .rilesbtn.plus.minus:after{
+  content: none;
+}
+
+/*.mapSection .rulesButtons{
+	position: absolute;
+	z-index: 10;
+	top: 10px;
+	left: 10px;
+	background: rgba(0,0,0,0.15);
+	width: 60px;
+	height: 60px;
+}
+
+.mapSection .rulesButtons .rilesbtn{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #000;
+	cursor: pointer;
+}
+
+.mapSection .rulesButtons .rilesbtn.top{
+	top: 0px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.mapSection .rulesButtons .rilesbtn.bottom{
+	bottom: 0px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.mapSection .rulesButtons .rilesbtn.left{
+	top: 50%;
+	left: 0px;
+	margin-top: -10px;
+}
+
+.mapSection .rulesButtons .rilesbtn.right{
+	top: 50%;
+	right: 0px;
+	margin-top: -10px;
+}
+
+.mapSection .rulesButtons .rilesbtn.plus{
+	top: 50%;
+	left: 50%;
+	margin-top: -10px;
+	margin-left: -10px;
+	background: gray;
+}
+
+.mapSection .rulesButtons .rilesbtn.plus:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 12px;
+	height: 2px;
+	margin-left: -6px;
+	margin-top: -1px;
+	background: #fff;
+}
+
+.mapSection .rulesButtons .rilesbtn.plus:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 12px;
+	margin-top: -6px;
+	margin-left: -1px;
+	background: #fff;
+}
+
+.mapSection .rulesButtons .rilesbtn.plus.minus:after{
+	content: none;
+}*/
+/************************************************ Блок ************************************************/

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Чернов Иван Геннадьевич</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="/js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/pluginGradient.js"></script>
+</head>
+<body>
+	<section class="wrap">
+		<section class="work">
+			<section class="TitleExample">Примеры решений рабочих задач</section>
+			<section class="example">
+				<div class="example_block left centerText"><h2 class="title">Возможное решение</h2></div>
+				<div class="example_block right centerText"><h2 class="title">Мое решение</h2></div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Градиент</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Способ 1. Вырезать картинку и положить как background (медленная прогрузка страницы, высота блока фиксирована).</div>
+					<div class="text"><img src="img/grad1.png" /></div>
+					<div class="text">Способ 2. Вырезать 1px картинки и положить как background, размножить по горизонтали, background-repeat: repeat-x (оптимально для прогрузки страницы, высота блока фиксирована).</div>
+					<div class="text"><img src="img/grad2.png" /></div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Градиент с помощью css (максимальная скорость прогрузки страницы, резиновый блок):</div>
+					<code class="codeText">
+						<div class="css"><ol><li class="li1"><div class="de1"><span class="kw1">background</span><span class="sy0">:</span> <span class="kw2">rgb</span><span class="br0">&#40;</span><span class="nu0">210</span><span class="sy0">,</span><span class="nu0">255</span><span class="sy0">,</span><span class="nu0">82</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+						<li class="li1"><div class="de1"><span class="kw1">background</span><span class="sy0">:</span> -moz-linear-gradient<span class="br0">&#40;</span><span class="kw1">top</span><span class="sy0">,</span> rgba<span class="br0">&#40;</span><span class="nu0">210</span><span class="sy0">,</span><span class="nu0">255</span><span class="sy0">,</span><span class="nu0">82</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="re3">0%</span><span class="sy0">,</span> rgba<span class="br0">&#40;</span><span class="nu0">63</span><span class="sy0">,</span><span class="nu0">198</span><span class="sy0">,</span><span class="nu0">115</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="re3">100%</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+						<li class="li1"><div class="de1"><span class="kw1">background</span><span class="sy0">:</span> -webkit-linear-gradient<span class="br0">&#40;</span><span class="kw1">top</span><span class="sy0">,</span> rgba<span class="br0">&#40;</span><span class="nu0">210</span><span class="sy0">,</span><span class="nu0">255</span><span class="sy0">,</span><span class="nu0">82</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="re3">0%</span><span class="sy0">,</span>rgba<span class="br0">&#40;</span><span class="nu0">63</span><span class="sy0">,</span><span class="nu0">198</span><span class="sy0">,</span><span class="nu0">115</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="re3">100%</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+						<li class="li1"><div class="de1"><span class="kw1">background</span><span class="sy0">:</span> linear-gradient<span class="br0">&#40;</span>to <span class="kw1">bottom</span><span class="sy0">,</span> rgba<span class="br0">&#40;</span><span class="nu0">210</span><span class="sy0">,</span><span class="nu0">255</span><span class="sy0">,</span><span class="nu0">82</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="re3">0%</span><span class="sy0">,</span>rgba<span class="br0">&#40;</span><span class="nu0">63</span><span class="sy0">,</span><span class="nu0">198</span><span class="sy0">,</span><span class="nu0">115</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="re3">100%</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+						<li class="li2"><div class="de2">filter<span class="sy0">:</span> progid<span class="re2">:DXImageTransform</span><span class="re1">.Microsoft</span>.gradient<span class="br0">&#40;</span> startColorstr<span class="sy0">=</span><span class="st0">'#d2ff52'</span><span class="sy0">,</span> endColorstr<span class="sy0">=</span><span class="st0">'#3fc673'</span><span class="sy0">,</span>GradientType<span class="sy0">=</span><span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+						</ol></div>
+					</code>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Уровень сигнала wifi</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Создать маску с помощью изображения mask.png, наложить на div с зеленым цветом. Изменяя ширину div от 0 до 100%, показывем уровень сигнала.</div>
+					<div class="text"><img src="img/wifi.png" /></div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Создать маску с помощью набора из div элементов,  наложить на div с зеленым цветом. Изменяя ширину div от 0 до 100%, показываем уровень сигнала.
+						В результате все строится на css без участия изображений.</div>
+					<div class="text"><strong>Ниже живой пример:</strong></div>
+					<div class="text">
+						<div class="title_list">Список доступных сетей wifi</div>
+						<div class="list_container">
+							<div class="list_block">
+								<div class="signal_power">
+									<div class="powershow" style="width: 35%;"></div>
+									<div class="power20"></div>
+									<div class="power40"></div>
+									<div class="power60"></div>
+									<div class="power80"></div>
+									<div class="power100"></div>
+								</div>
+								<div class="signal_name">SD</div>
+								<div class="connect"></div>
+							</div>
+							<div class="list_block">
+								<div class="signal_power">
+									<div class="powershow" style="width: 75%;"></div>
+									<div class="power20"></div>
+									<div class="power40"></div>
+									<div class="power60"></div>
+									<div class="power80"></div>
+									<div class="power100"></div>
+								</div>
+								<div class="signal_name">Daniel</div>
+								<div class="connect"></div>
+							</div>
+							<div class="list_block">
+								<div class="signal_power">
+									<div class="powershow" style="width: 100%;"></div>
+									<div class="power20"></div>
+									<div class="power40"></div>
+									<div class="power60"></div>
+									<div class="power80"></div>
+									<div class="power100"></div>
+								</div>
+								<div class="signal_name">Chigrus</div>
+								<div class="connect"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Блок с вертикальными вкладками</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Модуль СЭД (ООО Кодекс), существующий в рабочей системе, был передан мне на переработку.
+						Первоначально модуль имел расчеты на js. Модуль состоит из двух блоков. Первый блок - для отображения контента.
+						Второй блок - таб с вкладками для переключения отображаемого контента ("Сообщения", "Исполнители", "Пометки") и кнопками
+						"фиксировать блок", "свернуть-развернуть блок контента". Нижние 2 кнопки - квадратные, фиксированного размера.
+						Табы имеют размер 150px. Активный таб должен занимать оставшееся свободное пространство.</div>
+						<div class="text">Для того чтобы модуль адаптивно работал на экранах с разной высотой, расчет всех
+						табов производился на js, включая перерасчет при изменении размера окна браузера. Анимация при смене активного таба
+						выполнялась на js.</div>
+					<div class="text"><img src="img/messages.png" /></div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Расчет табов переложен на css благодаря flex-технологии. Перерасчет размеров всех блоков модуля при изменении окна
+					браузера также переложен на css. Анимация смены активной вкладки сделана с помощью css анимации.</div>
+					<div class="text">В результате процесс "свернуть-развернуть контейнер для контента" сводится к смене класса .open у блока.
+						Анимация при смене активного таба происходит за счет установки класса .active у активного таба и переопределения его порядка в родительском элементе.
+						<div class="text">Данный пример демонстрирует, как можно снять значительную часть расчетов js и переложить их на css.</div>
+					</div>
+					<div class="text"><strong>Ниже живой пример:</strong></div>
+					<div class="text">
+						<div class="win_work">
+							<div class="win_form open">
+							<div class="win_content">
+								<div class="messages_container active">
+									<div class="buttons_bar">
+										<ul class="menu_buttons_bar">
+											<li class="btn_add"></li>
+											<li class="btn_refresh"></li>
+										</ul>
+									</div>
+									<div class="mesage_content_section">
+										<div class="mesage_content">
+											<div class="mesage_content_block">
+												<div class="photo_user"><img src="images/1.jpg" /></div>
+												<div class="info_user">
+													<div class="top_info_user">
+														<div class="user_name">Лемм И. В.</div>
+														<div class="data_message">
+															<div class="icon"></div>
+															21.01.2012 21:12:33</div>
+													</div>
+													<div class="text_message">Необходимо как можно быстрее подготовить ответ.</div>
+												</div>
+												<div class="added_files">
+													<a href="/" class="file_name">
+														<div class="icon blue"></div>
+														ОРЗ, 1-16-8/00-12
+													</a>
+													<a href="/" class="file_name">
+														<div class="icon green"></div>
+														Приложение1.doc
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="mesage_content user">
+											<div class="mesage_content_block">
+												<div class="photo_user"><img src="images/1.jpg" /></div>
+												<div class="info_user">
+													<div class="top_info_user">
+														<div class="user_name">Я  >> Лемм И. В.</div>
+														<div class="data_message">21.01.2012 21:20:01</div>
+													</div>
+													<div class="text_message">Ok, договорились.</div>
+												</div>
+											</div>
+										</div>
+										<div class="mesage_content">
+											<div class="mesage_content_block">
+												<div class="photo_user"><img src="images/1.jpg" /></div>
+												<div class="info_user">
+													<div class="top_info_user">
+														<div class="user_name">Лемм И. В.</div>
+														<div class="data_message">
+															<div class="icon"></div>
+															21.01.2012 21:35:26
+														</div>
+													</div>
+													<div class="text_message">Договорились.</div>
+												</div>
+											</div>
+										</div>
+										<div class="message_block">
+											<div class="adresats_block">
+												<div class="title">Адресаты:</div>
+												<div class="input_adres">
+													<div class="icon_book"></div>
+													<input class="adress" placeholder="Введите имя адресата..." />
+												</div>
+											</div>
+											<div class="text_block">
+												<div class="text" contenteditable="true" tabindex="0">Я передумал.<br>Не договорились.<br>Нужно срочно передоговориться.</div>
+											</div>
+											<div class="line_add">
+												<div class="title">Документы:</div>
+												<div class="btn_add">
+													<div class="icon"></div>
+													Добавить документ...
+												</div>
+											</div>
+											<div class="line_add">
+												<div class="title">Файлы:</div>
+												<div class="btn_add">
+													<div class="icon"></div>
+													Добавить файл...
+												</div>
+											</div>
+											<div class="rule_buttons">
+												<div class="rule_btn send_message">
+													<div class="icon"></div>
+													<div class="title_block">
+														<div class="title">Отправить сообщение</div>
+													</div>
+												</div>
+												<div class="rule_btn cancel">
+													<div class="icon"></div>
+													<div class="title_block">
+														<div class="title">Отмена</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="messages_container">
+									<div class="buttons_bar">
+										<ul class="lists_menu">
+											<li><span class="ba"></span></li>
+											<li class="active"><span class="kv"></span></li>
+											<li><span class="gr"></span></li>
+										</ul>
+										<ul class="menu_buttons_bar">
+											<li class="btn_va"></li>
+										</ul>
+									</div>
+									<div class="mesage_content_section">
+										<div class="performer_block yellow">
+											<div class="photo"><img src="images/1.jpg" /></div>
+											<div class="info_performer">
+												<div class="name">Лемм И.В.</div>
+												<div class="position">И. о. руководителя сектора</div>
+											</div>
+										</div>
+										<div class="performer_block red">
+											<div class="photo"><img src="images/2.jpg" /></div>
+											<div class="info_performer">
+												<div class="name">Лемм И.В.</div>
+												<div class="position">И. о. руководителя сектора</div>
+											</div>
+										</div>
+										<div class="performer_block green">
+											<div class="photo"><img src="images/3.jpg" /></div>
+											<div class="info_performer">
+												<div class="name">Лемм И.В.</div>
+												<div class="position">И. о. руководителя сектора</div>
+											</div>
+										</div>
+										<div class="performer_block green">
+											<div class="photo"><img src="images/4.jpg" /></div>
+											<div class="info_performer">
+												<div class="name">Лемм И.В.</div>
+												<div class="position">И. о. руководителя сектора</div>
+											</div>
+										</div>
+										<div class="performer_block green">
+											<div class="photo"><img src="images/5.jpg" /></div>
+											<div class="info_performer">
+												<div class="name">Лемм И.В.</div>
+												<div class="position">И. о. руководителя сектора</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="messages_container performers">
+									<div class="buttons_bar">
+										<ul class="menu_buttons_bar">
+											<li class="btn_add"></li>
+											<li class="btn_refresh"></li>
+										</ul>
+									</div>
+									<div class="mesage_content_section">
+										<div class="mesage_content full_text user">
+											<div class="mesage_content_block">
+												<div class="info_user">
+													<div class="top_info_user">
+														<div class="user_name"><div class="icon"></div>Я</div>
+														<div class="data_message">
+															<div class="icon delete"></div>
+															<div class="icon my"></div>
+															<div class="data">21.01.2012 21:35:26</div>
+														</div>
+													</div>
+													<div class="text_message">Это моя личная пометка.</div>
+												</div>
+											</div>
+										</div>
+										<div class="mesage_content full_text">
+											<div class="mesage_content_block">
+												<div class="info_user">
+													<div class="top_info_user">
+														<div class="user_name">Лемм И. В.</div>
+														<div class="data_message">
+															21.01.2012 21:35:26
+														</div>
+													</div>
+													<div class="text_message">На этот документ необходимо наложить какую-нибудь резолюцию</div>
+												</div>
+											</div>
+										</div>
+										<div class="message_block">
+											<div class="text_block">
+												<div class="text" contenteditable="true" tabindex="0">Я передумал.<br>Не договорились.<br>Нужно срочно передоговориться.</div>
+											</div>
+											<div class="rule_buttons">
+												<div class="rule_btn public">
+													<div class="icon"></div>
+													<div class="title_block">
+														<div class="title">Публичная</div>
+													</div>
+												</div>
+												<div class="rule_btn save">
+													<div class="icon"></div>
+													<div class="title_block">
+														<div class="title">Сохранить</div>
+													</div>
+												</div>
+												<div class="rule_btn cancel">
+													<div class="icon"></div>
+													<div class="title_block">
+														<div class="title">Отмена</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs_container">
+								<ul class="list_tabs">
+										<div class="list_container">
+											<li class="messages" color="#edc1c1"><span class="title">Сообщения (0 / 0)</span><span class="bg_separator"></span></li>
+											<li class="users" color="#c5e1d6"><span class="title">Исполнители</span><span class="bg_separator"></span></li>
+											<li class="info" color="#e3cab2"><span class="title">Пометки (0 / 0)</span><span class="bg_separator"></span></li>
+										</div>
+								</ul>
+								<ul class="list_icons">
+									<li class="pin"></li>
+									<li class="toogle"></li>
+								</ul>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="TitleExample">Примеры моих работ:</section>
+			<section class="example">
+				<div class="example_block left centerText"><h2 class="title">Описание задачи</h2></div>
+				<div class="example_block right centerText"><h2 class="title">Адрес для просмотра решения</h2></div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">ГИДРОИЗОЛЯЦИЯ IZOMIX</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Лендинг с адаптивной версткой. Адаптив сделан руками, без бутстрап. Работает на wordpress. Весь контент странички подключен к
+					админке, можно редактировать.</div>
+					<div class="text">В head подключены только css. Все js файлы подключены до закрытия body.
+					Все лишние файлы, которые wordpress ставит по умолчанию, убраны, за счет этого скорость загрузки странички максимальна.</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Сайт работает здесь: <a href="http://izomix.ru" target="_blank">http://izomix.ru</a></div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Planet Centauri</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Сайт для игры "Planet Centauri". Лендинг с адаптивной версткой. Адаптив сделан руками, без бутстрап. Заказчик из Франции.</div>
+					<div class="text">Анимации - часть на js, часть на css. Дизайн от студии "108Pixel".</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Сайт работает здесь: <a href="http://planetcentauri.com" target="_blank">http://planetcentauri.com</a></div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Moley Robotics</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Сайт компании "Moley Robotics".</div>
+					<div class="text">Разработка сайта велась группой специалистов web-технологий. На мне, как обычно, была ответственность за html-верстку.
+					Дизайн разарабтывался студией "108Pixel" (с тех пор я периодически сотрудничаю с этими дизайнерами). На презентации
+				робота в Ганновере сделанный нами сайт транслировался на экране, позже ссылка на сайт была опубликована в популярных журналах.</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Главная страница здесь: <a href="http://www.moley.com" target="_blank">http://www.moley.com</a></div>
+					<div class="text">Страница рецептов здесь: <a href="http://moley.org/recipesm" target="_blank">http://moley.org/recipes</a></div>
+				</div>
+			</section>
+			<section class="TitleExample">Отдельные компоненты:</section>
+			<section class="example">
+				<div class="example_block left centerText"><h2 class="title">Описание компонента</h2></div>
+				<div class="example_block right centerText"><h2 class="title">Реализация</h2></div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Версия для слабовидящих</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">В связи с тем, что ко мне часто обращаются с просьбой сделать на сайте версию для слабовидящих, мною был разработан
+					модуль, с помощью которого можно организовать на сайте такой функционал. Модуль разработан с помощью html, css, jquery и плагина jQuery cookie.
+				</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Пример работы модуля можно посмотреть на сайте <a href="http://pravoslavsad.ru" target="_blank">http://pravoslavsad.ru</a>.
+						В шапке сайта будет кнопка "Версия для слабовидящих", нажав на которую, можно увидеть модуль в действии.</div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Горизонтальная диаграмма</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Во время работы над одним из новых проектов в ООО "Кодекс" появилась необходимость сделать горизонтальную диаграмму.</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Передаем параметры</div>
+					<code class="codeText">
+						<div class="javascript"><ol><li class="li1"><div class="de1">&nbsp; &nbsp; $<span class="br0">&#40;</span><span class="st0">&quot;.HorizontalChart&quot;</span><span class="br0">&#41;</span>.<span class="me1">drawHorizontalChart</span><span class="br0">&#40;</span><span class="br0">&#91;</span></div></li>
+						<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span> title<span class="sy0">:</span> <span class="st0">&quot;Tokyo&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="nu0">10</span><span class="sy0">,</span> color<span class="sy0">:</span> <span class="st0">&quot;#60c9cc&quot;</span> <span class="br0">&#125;</span><span class="sy0">,</span></div></li>
+						<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span> title<span class="sy0">:</span> <span class="st0">&quot;San Francisco&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="nu0">40</span><span class="sy0">,</span> color<span class="sy0">:</span> <span class="st0">&quot;#5eb568&quot;</span> <span class="br0">&#125;</span><span class="sy0">,</span></div></li>
+						<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span> title<span class="sy0">:</span> <span class="st0">&quot;New York&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="nu0">30</span><span class="sy0">,</span> color<span class="sy0">:</span> <span class="st0">&quot;#fdb368&quot;</span> <span class="br0">&#125;</span><span class="sy0">,</span></div></li>
+						<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span> title<span class="sy0">:</span> <span class="st0">&quot;London&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="nu0">20</span><span class="sy0">,</span> color<span class="sy0">:</span> <span class="st0">&quot;#ff6550&quot;</span> <span class="br0">&#125;</span></div></li>
+						<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+						</ol></div>
+					</code>
+					<div class="text">Результат:</div>
+					<div class="text"><div class="HorizontalChart"></div></div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Карта для "108Pixel"</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Для главной страницы для сайта "108Pixel" понадобилось разработать плагин со следующими функциями:</div>
+					<ul class="list">
+						<li>Навигация по небольшой карте - виртуальной схеме студии "108Pixel";</li>
+						<li>Навигация с помощью курсора мыши и стрелок;</li>
+						<li>Приближение и отдаление схемы, глубина 1 шаг;</li>
+						<li>Маркеры с подписями, подписи всплывают при наведении мыши;</li>
+						<li>Над схемой проплывает облако, которое не должно мешать навигации и наведению на маркеры.</li>
+					</ul>
+					<div class="text">
+						<p>После того как были изучены уже существующие плагины, пришли к выводу, что ни один не соответствует
+						поставленной задаче, и второй <b>ВАЖНЫЙ</b> момент, все используют еще десяток и более дополнительных плагинов, в связи с чем,
+						плагин "еле шевелится".</p><br>
+						<p>Было принято решение написать плагин самостоятельно.</p></div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Живой пример: <a href="/map.html" target="_blank">Смотреть</a></div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Анимация на чистом css</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Демонстрация работы с анимацией на чистом css.</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Живой пример: <a href="/cube.html" target="_blank">Смотреть</a></div>
+				</div>
+			</section>
+			<section class="example noBorderBottom">
+				<div class="example_block left"><h3 class="titleBox">Анимация на чистом css</h3></div>
+				<div class="example_block right"></div>
+			</section>
+			<section class="example">
+				<div class="example_block left">
+					<div class="text">Просто работа с css-анимацией.</div>
+				</div>
+				<div class="example_block right">
+					<div class="text">Живой пример: <a href="/cube.html" target="_blank">Смотреть</a></div>
+				</div>
+			</section>
+		</section>
+	</section>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<defs>
+</defs>
+<circle fill="#FFFFFF" cx="12" cy="12" r="12"/>
+<path fill="{color}" transform="rotate({angle}, 12, 12)" d="M12,0C5.3828125,0,0,5.3828125,0,12s5.3828125,12,12,12s12-5.3828125,12-12S18.6171875,0,12,0z
+	 M18.3730469,11.4101563l-5.4160156,5.4160156c-0.5283203,0.5273438-1.3857422,0.5273438-1.9140625,0l-5.4160156-5.4160156
+	c-0.5283203-0.5283203-0.5283203-1.3867188,0-1.9140625c0.5292969-0.5292969,1.3857422-0.5292969,1.9150391,0L12,13.953125
+	l4.4580078-4.4570313c0.5292969-0.5292969,1.3857422-0.5292969,1.9150391,0
+	c0.2646484,0.2636719,0.3964844,0.609375,0.3964844,0.9560547S18.6376953,11.1455078,18.3730469,11.4101563z"/>
+<radialGradient gradientTransform="rotate({backgroundAngle}, 12, 12)" id="SVGID_1_" cx="12" cy="3.1728516" r="22.2501049" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.351515" style="stop-color:#FFFFFF;stop-opacity:0.4"/>
+	<stop  offset="0.842424" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<path fill="url(#SVGID_1_)" d="M12,0C5.3828125,0,0,5.3828125,0,12s5.3828125,12,12,12s12-5.3828125,12-12S18.6171875,0,12,0z"/>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<defs>
+</defs>
+<circle fill="#FFFFFF" cx="12" cy="12" r="12"/>
+<polygon fill="{color}" transform="rotate({angle}, 12, 12)" points="9.7470703,14.2539063 13.2783203,12.8710938 11.1298828,10.7216797 "/>
+<path fill="{color}" transform="rotate({angle}, 12, 12)" d="M12,0C5.3828125,0,0,5.3828125,0,12c0,6.6162109,5.3828125,12,12,12s12-5.3837891,12-12
+	C24,5.3828125,18.6171875,0,12,0z M17.2138672,14.1171875c-0.1328125,0.1328125-0.2910156,0.2363281-0.4648438,0.3037109
+	l-8.8964844,3.4814453c-0.1601563,0.0634766-0.328125,0.0927734-0.4941406,0.0927734
+	c-0.3515625,0-0.6972656-0.1376953-0.9570313-0.3955078c-0.3808594-0.3808594-0.5-0.9501953-0.3027344-1.4511719
+	l3.4804688-8.8964844c0.0683594-0.1748047,0.171875-0.3330078,0.3046875-0.4648438l3.9023438-3.902832
+	c0.9902344,0.1938477,1.9228516,0.546875,2.7744141,1.0288086c-0.0380859,0.0512695-0.0742188,0.1010742-0.1201172,0.1464844
+	l-4.0722656,4.0712891l3.5,3.5019531l4.0722656-4.0722656c0.0458984-0.0449219,0.0976563-0.0820313,0.1464844-0.1201172
+	c0.4824219,0.8515625,0.8349609,1.7836914,1.0292969,2.7739258L17.2138672,14.1171875z"/>
+<radialGradient gradientTransform="rotate({backgroundAngle}, 12, 12)" id="SVGID_1_" cx="12" cy="3.1728516" r="22.2501049" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.351515" style="stop-color:#FFFFFF;stop-opacity:0.4"/>
+	<stop  offset="0.842424" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</radialGradient>
+<path fill="url(#SVGID_1_)" d="M12,0C5.3828125,0,0,5.3828125,0,11.9995117C0,18.6171875,5.3828125,24,12,24
+	s12-5.3828125,12-12.0004883C24,5.3828125,18.6171875,0,12,0z"/>
+</svg>
